@@ -9,10 +9,14 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<body bg-color="black">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-lg-start justify-content-center">
     <a class="navbar-brand" href="#"><img src="https://forklog.com/wp-content/uploads/logo-3.png"
         style="width: 50px" /></a>
+        <a role="button" class="navbar-brand d-inline d-md-none" data-toggle="collapse" data-target="#navigation"
+            aria-expanded="false" aria-controls="navigation"><img src="https://forklog.com/wp-content/uploads/logo-3.png" width="50px"></a>
+
+    
 
     <ul class="navbar-nav">
       <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
@@ -197,44 +201,58 @@
     </div>
   </div>
 
-  <div class="row justify-content-center my-5">
-    <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="
-        
-    Грибной суп:
-
-    Тарелка
-    Коричневый гриб - 1
-    Красный гриб - 1">
-      жми!
-    </button>
-  </div>
 
   <div class="row justify-content-center my-5">
-    <button class="btn btn-primary" data-toggle="popover" data-placement="right" title="
-        
-    tut popover">
-      жми!
-    </button>
+    <form class="form-inline">
+      <select class="custom-select">
+        <option selected value="https://zloikon.github.io">Максим</option>
+        <option value="https://lazh22.github.io">Владимир</option>
+        <option value="https://vaso1943.github.io">Василий</option>
+        <option value="https://svetpru.github.io">Светлана</option>
+        <option value="https://formit21.github.io">Степан</option>
+        <option value="https://sashapozharin.github.io">Александр</option>
+        <option value="https://hhamster39.github.io">Альбина</option>
+        <option value="https://artart241.github.io">Артём</option>
+      </select>
+      <button type="button" class="btn btn-danger ml-3" id="btnSelect">Отправить запрос</button>
+    </form>
   </div>
 
-  <div class="row justify-content-center my-5">
-    <button class="btn btn-primary" data-toggle="collapse" title="
-        
-    tut collapse">
-      collapse!
-    </button>
+  <div class="modal fade" id="msgBox" data-keyboard="false" data-backdrop="static" tabindex="-1" aria-hidden="true"
+    aria-labelledby="msgLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="msgLabel"></h4>
+        </div>
+        <div class="modal-body">
+          <!-- Сообщение от другого пользователя -->
+          <div id="answer">
+            <h1>Привет!</h1>
+            <p>Это Сообщение</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
-  <script type="text/javascript" src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
